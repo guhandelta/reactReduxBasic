@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <h1>Headsup from App.js</h1>
       <h2>Counter: {counter}</h2>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
+      <button onClick={() => dispatch(increment(5))}>+</button>{/* Redux using a payload */}
+      <button onClick={() => dispatch(decrement(3))}>-</button>
       {isLogged ? <h2>Welcome to teh Hood</h2> : <h2>Sorry brah, ya don't belong here</h2>}
     </div>
   );
